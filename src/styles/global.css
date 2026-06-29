@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&family=Ephesis&family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&family=Ephesis&family=Qwitcher+Grypen&family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Jost:wght@200;300;400&display=swap');
 
 :root {
   --ivory: #faf8f4;
@@ -244,11 +244,11 @@ h3 {
 
 .hero h1 {
   margin-top: 0.7rem;
-  font-family: 'Ephesis', cursive;
-  font-size: clamp(5rem, 18vw, 12rem);
+  font-family: 'Qwitcher Grypen', cursive;
+  font-size: clamp(6rem, 22vw, 14rem);
   font-weight: 400;
   line-height: 1.05;
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .hero-line {
@@ -785,11 +785,12 @@ h3 {
   position: relative;
   margin-top: clamp(1.4rem, 4.6vw, 2rem);
   color: var(--ink);
-  font-family: var(--font-script);
-  font-size: clamp(2.8rem, 10vw, 5rem);
+  font-family: var(--font-caps);
+  font-size: clamp(1.4rem, 5vw, 2.2rem);
   font-weight: 400;
-  letter-spacing: 0.01em;
-  line-height: 1;
+  letter-spacing: 0.18em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .location-name::after {
@@ -810,6 +811,16 @@ h3 {
   letter-spacing: 0.06em;
   line-height: 1.6;
   text-align: center;
+}
+
+.location-tap-hint {
+  margin-top: 0.6rem;
+  color: var(--gold-dark);
+  font-family: var(--font-caps);
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
 }
 
 /* Luxury portrait frame */
