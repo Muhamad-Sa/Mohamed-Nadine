@@ -13,7 +13,6 @@ export default function RSVP({ options }) {
     const form = event.currentTarget;
     const name = form.name.value.trim();
     const attendance = form.attendance.value;
-    const guests = form.guests.value;
     const message = form.message.value.trim();
 
     const text = [
