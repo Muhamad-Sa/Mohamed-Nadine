@@ -21,7 +21,6 @@ export default function RSVP({ options }) {
       ``,
       `Name: ${name}`,
       `Attending: ${attendance}`,
-      `Number of guests: ${guests}`,
       message ? `Note: ${message}` : null,
     ]
       .filter((line) => line !== null)
@@ -61,10 +60,6 @@ export default function RSVP({ options }) {
                   <option key={option}>{option}</option>
                 ))}
               </select>
-            </label>
-            <label>
-              Number of guests
-              <input name="guests" type="number" min="1" max="6" defaultValue="1" required />
             </label>
             <label>
               Message to the couple

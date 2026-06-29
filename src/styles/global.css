@@ -159,11 +159,11 @@ h3 {
 .template-copy h1 {
   margin-top: 0.65rem;
   font-family: var(--font-script);
-  font-size: clamp(5rem, 10vw, 11rem);
+  font-size: clamp(4rem, 8vw, 8.5rem);
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.05;
   color: #2e1f1a;
-  text-shadow: 0 4px 24px rgba(201, 169, 110, 0.22);
+  text-shadow: 0 2px 12px rgba(201, 169, 110, 0.15);
 }
 
 .template-copy h1 span,
@@ -244,10 +244,12 @@ h3 {
 .hero h1 {
   margin-top: 0.7rem;
   font-family: var(--font-script);
-  font-size: clamp(5rem, 18vw, 12rem);
+  font-size: clamp(4rem, 14vw, 9rem);
   font-weight: 400;
-  line-height: 1;
-  text-shadow: 0 8px 40px rgba(0, 0, 0, 0.32), 0 2px 8px rgba(201, 169, 110, 0.2);
+  line-height: 1.05;
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.22);
+  -webkit-text-stroke: 0;
+  filter: none;
 }
 
 .hero-line {
