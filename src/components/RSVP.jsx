@@ -17,12 +17,12 @@ export default function RSVP({ options }) {
     const message = form.message.value.trim();
 
     const text = [
-      `💍 RSVP — Mohamed & Nadine`,
+      `RSVP — Mohamed & Nadine`,
       ``,
-      `👤 Name: ${name}`,
-      `✉️ Attending: ${attendance}`,
-      `👥 Number of guests: ${guests}`,
-      message ? `💬 Note: ${message}` : null,
+      `Name: ${name}`,
+      `Attending: ${attendance}`,
+      `Number of guests: ${guests}`,
+      message ? `Note: ${message}` : null,
     ]
       .filter((line) => line !== null)
       .join('\n');
