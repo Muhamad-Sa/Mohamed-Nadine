@@ -43,6 +43,30 @@ export default function Entrance({ data, onOpen }) {
           </h1>
           <p className="script-line">{data.invitationLine}</p>
           <p className="entrance-date">{data.displayDate}</p>
+          <motion.div
+            className="entrance-arrow"
+            aria-hidden="true"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2, duration: 0.8 }}
+          >
+            <motion.div
+              className="entrance-arrow__line"
+              animate={{ scaleY: [0.85, 1, 0.85] }}
+              transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+            />
+            <motion.svg
+              className="entrance-arrow__chevron"
+              viewBox="0 0 24 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              animate={{ y: [0, 5, 0] }}
+              transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+            >
+              <path d="M1 1L12 12L23 1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"/>
+            </motion.svg>
+          </motion.div>
+
           <motion.button
             className="primary-button"
             onClick={onOpen}
