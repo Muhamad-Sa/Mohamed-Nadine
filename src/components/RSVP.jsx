@@ -27,7 +27,7 @@ export default function RSVP({ options }) {
       .join('\n');
 
     const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
-    window.open(url, '_blank');
+    window.location.href = url;
     setSubmitted(true);
   }
 
