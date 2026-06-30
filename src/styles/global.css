@@ -226,6 +226,26 @@ h3 {
   background: var(--hero-image) center/cover;
 }
 
+.hero-scroll-hint {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.hero-scroll-hint__line {
+  width: 1px;
+  height: 3rem;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5));
+  transform-origin: top;
+}
+
+.hero-scroll-hint svg {
+  width: 1.4rem;
+  margin-top: 0.25rem;
+}
+
 .hero-overlay {
   position: absolute;
   inset: 0;
