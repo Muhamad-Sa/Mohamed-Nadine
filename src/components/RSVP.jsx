@@ -3,30 +3,11 @@ import React from 'react';
 import { useState } from 'react';
 import Section from './Section.jsx';
 
-const WA_NUMBER = '201157669504';
-
 export default function RSVP({ options }) {
   const [submitted, setSubmitted] = useState(false);
 
   function handleSubmit(event) {
     event.preventDefault();
-    const form = event.currentTarget;
-    const name = form.name.value.trim();
-    const attendance = form.attendance.value;
-    const message = form.message.value.trim();
-
-    const text = [
-      `RSVP — Mohamed & Nadine`,
-      ``,
-      `Name: ${name}`,
-      `Attending: ${attendance}`,
-      message ? `Note: ${message}` : null,
-    ]
-      .filter((line) => line !== null)
-      .join('\n');
-
-    const url = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
-    window.location.href = url;
     setSubmitted(true);
   }
 
@@ -39,9 +20,9 @@ export default function RSVP({ options }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            <p className="eyebrow">Almost done!</p>
-            <h3>WhatsApp opened with your response.</h3>
-            <p>Just tap <strong>Send</strong> in WhatsApp to confirm your attendance.</p>
+            <p className="eyebrow">Response received</p>
+            <h3>Thank you for your reply.</h3>
+            <p>We look forward to celebrating with you.</p>
           </motion.div>
         ) : (
           <form onSubmit={handleSubmit}>
